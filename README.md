@@ -67,22 +67,31 @@
 
 ## I. SOLUCIÓN DE EJERCICIOS PROBLEMAS:
 <br>
-
+<tr>
 -   Las comillas invertidas permiten ejecutar programas dentro de los scripts y almacenar el resultado de
 ejecución en variables. Escriba un script que reciba dos argumentos y que internamente llame al programa
 grep con la opción -n (devuelve el número de línea de la ocurrencia), para luego mostrar el resultado del
 comando grep. Es posible que el resultado de grep devuelva varias líneas, en ese caso la variable será una
 lista de líneas, puede iterar sobre ella para mostrar cada línea por separado.
     
-```sh 
-    def verticalMirror(self):
-        vertical = []
-        for value in self.img:
-            # recorremos self y agregamos en vertical desde el ultimo valor hacia el inicial
-            vertical.append(value[::-1])
-        #retornamos el arreglo como Picture
-        return Picture(vertical)
+```bash
+#!/bin/bash
+
+    
 ```
+</tr>
+<tr>
+
+-   Escriba el script ambito.sh, que modifique la variable de ambiente PATH, agregándole un par de rutas. El
+programa deberá imprimir el valor de la variable PATH antes y después del cambio.
+    
+```bash
+#!/bin/bash
+echo "PATH antes de cambiar: $PATH"
+export PATH=$PATH:/home/user/bin:/home/user/bin/subdir
+echo "PATH después de cambiar: $PATH"
+    ```
+
 </tr>
 
 

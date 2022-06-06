@@ -147,23 +147,14 @@ Puede usar estos archivos, para probar su programa: <br>
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 
--   ¿Qué son los archivos *.pyc?: 
-    Los archivos pyc son creados por el intérprete de python cuando compila. Estos archivos contienen el traductor bytecode que traduce el código a bytecode. Lo que permite que se pueda omitir a la segunda ejecución si se hace una primera. Son como los archivos class en java cuyo bytecode se encuentra dentro de este, si bien este archivo ayuda a que una posterior ejecución sea mas rapida ejecutar a partir de este archivo no variará a si lo ejecutamos desde el archivo .py.
-
--   ¿Para qué sirve el directorio __pycache__?: 
-    _pycache_ es un directorio donde se guardan las versiones simplificadas de nuestros archivos .py, estas versiones se ejecutan con mayor velocidad que las originales, ya que son archivos ya compilados y listos para ser ejecutados. Estos archivos son la versión 'Bytecode' de nuestros archivos python.
-
--   ¿Cuáles son los usos y lo que representa el subguión en Python?: 
-    El guion bajo en python significa el tipo de comportamiento que tendrá una variable, clase o método, pudiendo variar de esta manera entre un guion bajo antes de la palabra, después o doble guiones antes y después. En el archivo de picture, se usa para el __init__, esto es conocido como métodos mágicos que al tener guiones bajo doble a los costados se indica que es un método específico de python, en el caso de __init_ es similar al public void main de Java. Cuando el guion bajo esta puesto antes de una clase, método o variable, significa que este es privado. 
+- 
 
 
 </tr>
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
 
--   Tras la realización de los ejercicios se concluye que, el uso de draw() es único, de tal manera que todo lo escrito despues como otros draw() será un código inalcanzable, es por eso que los métodos implementados son importantes, ya que nos permite crear el tablero de ajedrez como una sola imagen, a partir de concatenaciones, append, bucles, etc, y así poder utilizar draw() una sola vez.
--   El uso de los entornos virtuales en los proyectos es de suma importancia, ya que nos permite aislar las librerías que vamos a utilizar de otros entornos virtuales, esto lo podemos ver al agregar el módulo de pygame, que se añadía específicamente al entorno virtual en el que estabamos trabajando, y de esa manera funcionaban los imports de interpreter.py
--   Python es un lenguaje de programación que a diferencia de otros lenguajes, cuida su correcta compilación a travez de la sintaxis del código, donde la indentación toma mucha importancia. La sintaxis de este lenguaje a diferencia de java, es mucho más sencillo de entender y visualmente más cómodo, las funciones que implementamos trabajaban similar a otros lenguajes, solo que no era necesario definir el tipo de dato de entrada, por lo que se asume que python utiliza variables genéricas que se interpretan como un tipo específico una vez se les sea asignado un valor. 
+-  
 </tr>
 
 </tdbody>

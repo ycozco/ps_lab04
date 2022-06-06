@@ -164,8 +164,12 @@ done
 
 <tr><td colspan="6">II. SOLUCIÓN DE CUESTIONARIO: <br>
 
-- 
+- Ejecute el programa ambito.sh y luego verifique el valor de la variable PATH desde línea de comandos. ¿Qué
+puede concluir de este experimento?
+Se concateno el nuevo valor entregado por el usuario al valor original de la variable PATH.
+Al modificar la variable PATH, podemos actualizar el valor tanto borrando o concatenando nuevos valores.
 
+![Ejercicio2_d](images/ambito.sh.png)
 
 </tr>
 </tr>

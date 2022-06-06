@@ -90,7 +90,7 @@ programa deberá imprimir el valor de la variable PATH antes y después del camb
 echo "PATH antes de cambiar: $PATH"
 export PATH=$PATH:/home/user/bin:/home/user/bin/subdir
 echo "PATH después de cambiar: $PATH"
-    ```
+```
 
 </tr>
 
@@ -101,7 +101,7 @@ recibe una cantidad distinta de argumentos deberá mostrar un mensaje de error y
 Este ejercicio lo puede resolver con if, then, else ó con sólo if, then y usando return para terminar la
 ejecución del programa.
         
-    ```bash
+```bash
 #!/bin/bash
 if [ $# -eq 2 ]
 then
@@ -109,7 +109,7 @@ then
 else
     echo "Error: Cantidad de argumentos incorrecta"
 fi
-    ```
+```
 </td><tr>
 -   Usted deberá escribir un script que reciba dos argumentos, cada argumento será una lista de valores. El primer
     argumento contendrá una lista de palabras, el segundo argumento contendrá una lista de archivos de texto.

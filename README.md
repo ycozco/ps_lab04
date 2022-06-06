@@ -133,8 +133,8 @@ cantocoral.txt:
 Usted deberá incluir todos los experimentos que le ayudaron a resolver este problema, por lo que deberá
 hacer tantos commits como sean necesarios. Sin esos experimentos que demuestren cómo resolvió el
 problema, no tendrá nota.
-Puede usar estos archivos, para probar su programa:
-● https://drive.google.com/file/d/1EphGW4yHMlV2XVv0GHe4eu8nFnHIbydL/view?usp=sharing
+Puede usar estos archivos, para probar su programa: <br>
+● https://drive.google.com/file/d/1EphGW4yHMlV2XVv0GHe4eu8nFnHIbydL/view?usp=sharing <br>
 ● https://drive.google.com/file/d/1dumtV1ReByIVVCqy86l2AyGUYS3dB0qw/view?usp=sharing
 
 

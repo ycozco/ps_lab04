@@ -94,24 +94,52 @@ echo "PATH después de cambiar: $PATH"
 
 </tr>
 
+<tr> 
 
-## B. Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):<br>
+-   Escriba el script dosArgumentos.sh que reciba dos argumentos y los muestre en la salida estándar, si el script
+recibe una cantidad distinta de argumentos deberá mostrar un mensaje de error y terminar su ejecución.
+Este ejercicio lo puede resolver con if, then, else ó con sólo if, then y usando return para terminar la
+ejecución del programa.
+        
+    ```bash
+#!/bin/bash
+if [ $# -eq 2 ]
+then
+    echo "El primer argumento es $1 y el segundo es $2"
+else
+    echo "Error: Cantidad de argumentos incorrecta"
+fi
+    ```
 </td><tr>
+-   Usted deberá escribir un script que reciba dos argumentos, cada argumento será una lista de valores. El primer
+    argumento contendrá una lista de palabras, el segundo argumento contendrá una lista de archivos de texto.
+    Su programa deberá usar el programa grep o ed, para buscar cada una de las palabras en cada uno de los
+    archivos, reportando las líneas en que las palabras fueron encontradas. A continuación se muestra un
+    ejemplo de su funcionamiento:
+    
+```bash 
+$ index.sh "los sangre escribir" "poema20.txt cantocoral.txt"
+los
+poema20.txt: 1 4 8 17 32 34 49
+cantocoral.txt: 12 17 25 39
+sangre
+poema20.txt:
+cantocoral.txt: 11
+escribir
+poema20.txt: 1 8 17
+cantocoral.txt:
+```
 
-## Ejercicio2 a)
+Usted deberá incluir todos los experimentos que le ayudaron a resolver este problema, por lo que deberá
+hacer tantos commits como sean necesarios. Sin esos experimentos que demuestren cómo resolvió el
+problema, no tendrá nota.
+Puede usar estos archivos, para probar su programa:
+● https://drive.google.com/file/d/1EphGW4yHMlV2XVv0GHe4eu8nFnHIbydL/view?usp=sharing
+● https://drive.google.com/file/d/1dumtV1ReByIVVCqy86l2AyGUYS3dB0qw/view?usp=sharing
 
-```python
-from interpreter import draw
-from chessPictures import *
-#Creo un Picture de la imagen del caballo negro
-negativeK= knight.negative()
-#Creo en un Picture la primera linea incluyendo un caballo y el caballo(negativo)
-firstLine = knight.join(negativeK)
-#Creo en un Picture la segunda liena incluyenda el caballo(negativo) y el caballo
-secondLine = negativeK.join(knight)
-#Usando la funcion up de Picture, creo un Picture con la primera linea y la segunda linea
-result = firstLine.up(secondLine)
-draw(result)
+
+```bash
+#!/bin/bash
 ```
 ![Ejercicio2_a](results/ejercicio2_a.png)
 </tr>

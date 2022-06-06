@@ -76,7 +76,15 @@ lista de líneas, puede iterar sobre ella para mostrar cada línea por separado.
     
 ```bash
 #!/bin/bash
-
+for keyword in $1
+do
+  printf "%s\n" $keyword
+  for file in $2
+  do
+    RES=`grep -n $keyword $file|cut -d":" -f1|tr "\n" " "`
+    printf "\t%s:\t%s\n" $file "$RES"
+  done
+done
     
 ```
 </tr>
@@ -140,8 +148,17 @@ Puede usar estos archivos, para probar su programa: <br>
 
 ```bash
 #!/bin/bash
+for keyword in $1
+do
+  printf "%s\n" $keyword
+  for file in $2
+  do
+    RES=`grep -n $keyword $file|cut -d":" -f1|tr "\n" " "`
+    printf "\t%s:\t%s\n" $file "$RES"
+  done
+done
 ```
-![Ejercicio2_a](results/ejercicio2_a.png)
+
 </tr>
 
 
@@ -154,7 +171,6 @@ Puede usar estos archivos, para probar su programa: <br>
 </tr>
 <tr><td colspan="6">III. CONCLUSIONES:
 
--  
 </tr>
 
 </tdbody>

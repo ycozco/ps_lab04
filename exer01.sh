@@ -4,8 +4,13 @@
 #grep con la opción -n (devuelve el número de línea de la ocurrencia), para luego mostrar el resultado del
 #comando grep. Es posible que el resultado de grep devuelva varias líneas, en ese caso la variable será una
 #lista de líneas, puede iterar sobre ella para mostrar cada línea por separado.
-#!/bin/bash
-echo $1
-echo $2
-var1=` grep -n "o" >>>$1 `
-echo $var1
+#!/usr/bin/bash
+for keyword in $1
+do
+  printf "%s\n" $keyword
+  for file in $2
+  do
+    RES=`grep -n $keyword $file|cut -d":" -f1|tr "\n" " "`
+    printf "\t%s:\t%s\n" $file "$RES"
+  done
+done
